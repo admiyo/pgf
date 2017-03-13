@@ -1,14 +1,11 @@
 #################
-rm(list=ls());cat("\014")
-dir<-"~/Dropbox/Documents/Research/Papers/EAGeR_GFormula/"
-setwd(dir)
-
 # load support files
 source(file="ipak.R")
 source(file="SL_Wrapper.R")
 e1<-read.table("Rpgf_dat.txt", sep="\t",header=T)
 
-# lodad packages
+
+# load packages
 packages <- c("SuperLearner","data.table","doParallel","doRNG","sampling","plyr","profvis")
 ipak(packages)
 
